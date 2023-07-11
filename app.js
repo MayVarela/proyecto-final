@@ -7,7 +7,7 @@ const moment = require('moment');
 const exhbs = require("express-handlebars");//importacion de handelbars
 
 var indexRouter = require('./routes/index');
-var mascotasRouter = require('./routes/mascotas');
+var pacientesRouter = require('./routes/pacientes');
 var medicosRouter = require('./routes/medicos');
 var citasRouter = require('./routes/citas');
 
@@ -57,7 +57,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/mascotas', mascotasRouter);
+app.use('/pacientes', pacientesRouter);
 app.use('/medicos', medicosRouter);
 app.use('/citas', citasRouter);
 
