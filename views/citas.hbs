@@ -1,10 +1,10 @@
-<h1>CENTRO MEDICO VETERINARIO BACKEND</h1>
-<h2>LISTADO DE MEDICOS VETERINARIOS</h2>
+<h1>CENTRO MEDICO BACKEND</h1>
+<h2>LISTADO DE MEDICOS</h2>
 <table>
     <thead>
         <tr>
             <th>Fecha</th>
-            <th>Mascota</th>
+            <th>Paciente</th>
             <th>Medico</th>
             <th>Consultorio</th>
             <th>Opciones</th>
@@ -14,8 +14,8 @@
         {{#each citas}}
         <tr>
             <td>{{formatearFecha fecha}}</td>
-            <td>{{nombre}}</td>
-            <td>{{nombres}}</td>
+            <td>{{paciente}}</td>
+            <td>{{medico}}</td>
             <td>{{consultorio}}</td>
             <td>
                 <a class="eliminar" href="/citas/eliminar/{{id}}">Eliminar</a>
